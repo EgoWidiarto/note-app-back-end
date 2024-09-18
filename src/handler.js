@@ -5,6 +5,7 @@ const addNoteHandler = (request, h) => {
   const { title, content, tags } = request.payload;
 
   const id = nanoid(16);
+  const body = content;
   const createAt = new Date().toISOString();
   const updateAt = createAt;
 
